@@ -1,2 +1,0 @@
--fx-background-color : #CCCC33FF
--fx-background-color : #B399FFFF
