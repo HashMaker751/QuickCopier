@@ -1,5 +1,0 @@
-Colors======
-#ffcc00ff
-#000000ff
-#470736ff
-#B31A1AFF
