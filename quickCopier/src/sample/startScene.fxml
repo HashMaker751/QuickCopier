@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <AnchorPane fx:id="pane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="500.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+        <children>
+            <Button fx:id="startButton" layoutX="350.0" layoutY="233.0" mnemonicParsing="false" onAction="#SBA" prefHeight="35.0" prefWidth="100.0" text="Войти" />
+            <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="800.0" AnchorPane.topAnchor="0.0">
+                <menus>
+                    <Menu mnemonicParsing="false" text="File">
+                        <items>
+                            <MenuItem mnemonicParsing="false" onAction="#OnenMSMLC" text="Добавить" />
+                            <MenuItem mnemonicParsing="false" onAction="#SBA" text="Обновить" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                     <Menu mnemonicParsing="false" text="Выбрать фоновое изображение">
+                        <items>
+                           <MenuItem fx:id="AFCActivator" mnemonicParsing="false" onAction="#getImage" text="Выбрать на компьютере" />
+                           <Menu fx:id="ImageCollector" mnemonicParsing="false" text="Выбрать из существующих" />
+                        </items>
+                     </Menu>
+                     <Menu mnemonicParsing="false" text="Выбрать фоновый цвет">
+                       <items>
+                           <Menu fx:id="ColorCollector" mnemonicParsing="false" text="Выбрать из существующих" />
+                           <Menu mnemonicParsing="false" text="Создать цвет">
+                              <items>
+                                 <MenuItem fx:id="TFA" mnemonicParsing="false">
+                                    <graphic>
+                                       <Group>
+                                          <children>
+                                             <TextField fx:id="ColorTF" layoutX="-29.0" layoutY="2.0" prefHeight="25.0" prefWidth="112.0" promptText="Вписать" />
+                                             <Button fx:id="TFVB" layoutX="83.0" layoutY="2.0" mnemonicParsing="false" onAction="#getTFV" prefHeight="25.0" prefWidth="76.0" text="Добавить" />
+                                          </children>
+                                       </Group>
+                                    </graphic>
+                                 </MenuItem>
+                                 <MenuItem mnemonicParsing="false">
+                                    <graphic>
+                                       <ColorPicker fx:id="colorPicker" onAction="#getColorCP" promptText="Выбрать" />
+                                    </graphic>
+                                 </MenuItem>
+                              </items>
+                           </Menu>
+                       </items>
+                     </Menu>
+                     <Menu mnemonicParsing="false" text="Выбрать цвет кнопок копирования">
+                        <items>
+                           <MenuItem fx:id="TFA1" mnemonicParsing="false">
+                              <graphic>
+                                  <Group>
+                                    <children>
+                                       <TextField fx:id="ColorTF1" layoutX="-29.0" layoutY="2.0" prefHeight="25.0" prefWidth="112.0" promptText="Вписать" />
+                                       <Button fx:id="TFVB1" layoutX="83.0" layoutY="2.0" mnemonicParsing="false" onAction="#getTFV" prefHeight="25.0" prefWidth="76.0" text="Добавить" />
+                                    </children>
+                                 </Group>
+                              </graphic>
+                           </MenuItem>
+                           <MenuItem mnemonicParsing="false">
+                              <graphic>
+                                 <ColorPicker fx:id="colorPicker1" onAction="#getColorCP" promptText="Выбрать" />
+                              </graphic>
+                           </MenuItem>
+                        </items>
+                     </Menu>
+                     <Menu mnemonicParsing="false" text="Выбрать цвет кнопок скрытия">
+                        <items>
+                           <MenuItem fx:id="TFA11" mnemonicParsing="false">
+                              <graphic>
+                                 <Group>
+                                    <children>
+                                       <TextField fx:id="ColorTF2" layoutX="-29.0" layoutY="2.0" prefHeight="25.0" prefWidth="112.0" promptText="Вписать" />
+                                       <Button fx:id="TFVB2" layoutX="83.0" layoutY="2.0" mnemonicParsing="false" onAction="#getTFV" prefHeight="25.0" prefWidth="76.0" text="Добавить" />
+                                    </children>
+                                 </Group>
+                              </graphic>
+                           </MenuItem>
+                           <MenuItem mnemonicParsing="false">
+                              <graphic>
+                                 <ColorPicker fx:id="colorPicker2" onAction="#getColorCP" promptText="Выбрать" />
+                              </graphic>
+                           </MenuItem>
+                        </items>
+                     </Menu>
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+        </children>
+    </AnchorPane>
+</VBox>
