@@ -1,3 +1,0 @@
-Images=====
-snakeback.png
-icon2.png
